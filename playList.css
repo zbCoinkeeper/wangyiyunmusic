@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before *::after{
+    box-sizing: border-box;
+}
+
+.collect-wrap{
+    z-index: 2;
+    position:fixed;
+    background-color: white;
+    width: 100%;
+    height: 16vw;
+    bottom: 0px;
+    border-top:1px solid #e5e5e5;
+}
+
+
+.collect{
+    z-index: 3;
+    color: white;
+    margin: 0 auto;
+    position:fixed;
+    background-color:#D33A31;
+    left:8vw;
+    bottom:3vw ;
+    width: 86vw;
+    height: 11vw;
+    border-radius: 6vw; 
+}
+
+.collect-word{
+    position: absolute;
+    width: 53vw;
+    height: 7vw;
+    top:2vw;
+    left: 30%;
+    display: inline-block;
+}
+
+.wang-yi-music{
+    height: 6vw;
+    margin: auto 0;
+    vertical-align:middle;
+}
+
+.background-img{
+    -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(50px); 
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    z-index: -1;
+}
+
+.font-img{
+    position: absolute;
+    top:8vw;
+    left:4vw;
+    height: 33vw;
+}
+
+.song-word{
+    background-color:#ca5a58;
+    color: white;
+    position: absolute;
+    top:10vw;
+    left:4vw;
+    padding: 0 2vw;
+    font-size:3vw;
+    border-top-right-radius:3vw;
+    border-bottom-right-radius:3vw;
+}
+
+.attention-number{
+    position: absolute;
+    top:8vw;
+    left:19vw;
+    font-size: 3vw;
+    background-image: url(./img/earphone.svg);
+    color: white;
+    background-repeat:no-repeat;
+    background-size: 3vw;
+    background-position: 0;
+}
+
+.collect-image{
+    background-image: url(./img/collect-image.png);
+    position: absolute;
+    left: 53vw;
+    top:35vw;
+    background-position: -11vw 0;
+    width: 3vw;
+    height:3vw;
+    background-repeat: no-repeat;
+    background-size: 20vw auto;
+    
+}
+
+.user-image{
+    position: absolute;
+    height: 8vw;
+    border-radius: 8vw;
+    width: 8vw;
+    top:30vw;
+    left:47vw;
+}
+
+.collect-name{
+    position: absolute;
+    left: 47vw;
+    top:10vw;
+    color: white;
+}
+
+.collect-user-name{
+    position: absolute;
+    top:31vw;
+    left:56vw;
+    color: white;
+}
+
+
+
+.label{
+    
+    border: 1px solid gray;
+    border-radius: 3vw;
+    font-size: 3vw;
+    padding: 1px 2vw;
+}
+
+.describtion{
+    color: #666666;
+    padding-left: 4vw;
+    background-color: white;
+    padding-top:2vw;
+}
+
+.brief{
+    margin-top:5vw;
+    font-size: 4vw;
+}
+
+.song-list{
+    margin-top:5vw;
+    font-size:3vw;
+    background-color:#eeeff0;
+    color: #666666;
+    padding-left: 2vw;
+}
+
+
+.hot-song-list p{
+    text-align: center;
+}
+
+.hot-song-list {
+    
+}
+
+.hot-song-list  li{
+    
+    padding-bottom: 2vw;
+    position: relative;
+}
+
+.hot-song-list  li a{
+   text-decoration: none;
+   color: inherit;
+   display: flex;
+}
+
+
+.hot-song-list  li h3{
+    font-weight: normal;
+}
+
+.hot-song-list  svg.icon-play{
+   fill:gray;
+   width:9vw;
+   height: 9vw;
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   right:2vw;
+}
+
+.hot-song-list  li p{
+    font-size:4vw;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+ }
+
+.hot-song-list{
+    margin-top: 2vw;
+}
+
+
+.hot-song-list  li svg.icon-sq{
+    fill:orange;
+    width:4vw;
+    height: 4vw;
+    margin-right:2vw;
+   
+ }
+
+ .orange-hot-song{
+    height: 39vw;
+ }
+
+ .order-number{
+    height:13vw;
+    line-height:13vw; 
+    margin-left:3vw;
+    margin-right:3vw;
+    color: #666666;
+ }
+
+ .color-red{
+    color: red;
+ }
+
+ .song-name{
+    width:100%;
+    border-bottom: 0.1px solid #E2E2E3;
+ }
+
+

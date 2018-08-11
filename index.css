@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before *::after{
+    box-sizing: border-box;
+}
+
+ol{list-style: none}
+ul{list-style: none}
+.topbar{
+    background:red;
+    padding: 4.5vw 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.topbar .topsvg{
+    width: 38vw;
+}
+
+.topbar .downloadApp{
+   padding: 0.5em;
+   line-height: 5vw;
+   border: 1px solid white;
+   border-radius:4vw;
+   text-decoration:none;
+   color:white;
+}
+
+
+.noConllasp::before{
+    content: "";
+    display: table;
+}
+
+
+.siteNav{
+    position:fixed;
+    top:17vw;
+    z-index:1;
+    width: 100%;
+    background: white;
+}
+
+.siteNav>ol{
+    display: flex;
+    text-align: center;
+    border-bottom:1px solid #cccccc;
+}
+
+.tabContent{
+    margin-top:28vw;
+}
+
+.tabContent>li{
+    display: none;
+}
+
+.tabContent>li.active{
+    display: block;
+}
+
+.siteNav>ol>li{
+    flex:1;
+}
+
+.siteNav>ol>li.active{
+    color: red;
+    
+}
+
+.siteNav>ol>li>span{
+    height: 11vw;
+    line-height: 12vw;
+    display: inline-block;
+    position: relative;
+}
+
+
+.siteNav>ol>li.active>span::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-top:2px solid #D33A31;
+    left:-2vw;
+    right: -2vw;
+}
+
+
+.playlists{
+    margin-top:1vw;
+}
+
+.playlists>ul{
+   display: flex;
+   justify-content:space-between;
+   flex-wrap: wrap;
+
+}
+
+.playlists>ul>li{
+   width:32%;
+   margin-bottom: 3vw;
+}
+
+.playlists>ul>li>img{
+    width:100%;
+ }
+
+ .playlists>ul>li>p{
+    padding: 0 1vw;
+    display: -webkit-box;
+    height: 8vw; /* Fallback for non-webkit */
+    line-height: 4vw;
+    font-size:4vw;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ } 
+
+section>h2:first-child{
+    border-left:2px solid red;
+    font-weight: normal;
+    margin: 5vw 0;
+    line-height: 1;
+    font-size: 4.5vw;
+    padding-left:2.6vw;
+}
+
+
+.lastestMusic{
+
+}
+
+.lastestMusic>p{
+    text-align: center;
+}
+
+.lastestMusic>ol{
+    margin-left:calc(2.6vw + 2px);
+}
+
+.lastestMusic>ol>li{
+    border-bottom: 0.1px solid #E2E2E3;
+    padding-bottom: 2vw;
+    position: relative;
+}
+
+.lastestMusic>ol>li>a{
+   text-decoration: none;
+   color: inherit;
+}
+
+
+.lastestMusic>ol>li h3{
+    font-weight: normal;
+}
+
+.lastestMusic>ol svg.icon-play{
+   fill:gray;
+   width:9vw;
+   height: 9vw;
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   right:2vw;
+}
+
+.lastestMusic>ol>li p{
+    font-size:4vw;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+ }
+
+
+.lastestMusic>ol>li svg.icon-sq{
+    fill:orange;
+    width:4vw;
+    height: 4vw;
+    margin-right:2vw;
+ }
+
+.art{
+    padding-top:17.6vw;
+    background: transparent url(//s3.music.126.net/m/s/img/recommand_bg_2x.png?d045faf…) no-repeat center;
+    padding-bottom: 7vw;
+}
+
+.art .logo{
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+
+.art .logosvg{
+    width: 61.7vw;
+    text-align: center;
+}
+
+.art .open-app{
+    display: block;
+    margin: 0 auto;
+    width: 80.3vw;
+    text-decoration: none;
+    text-align: center;
+    border:1px solid red;
+    color:red;
+    line-height: 8.7vw;
+    padding: 1vw 0 ;
+    border-radius: 5.3vw;
+}
+
+.art .copyright{
+    font-size: 3.2vw;
+    transform: scale(0.75);
+    text-align: center;
+    color: gray;
+    margin-top:2vw;
+}
+
+#output a{
+    text-decoration: none;
+}
+
+
+.orange-song{
+    width: 100vw;
+    position: absolute;
+}
+
+.hot-song{
+    width: 45vw;
+    position: absolute;
+}
+
+.orange-hot-song{
+    position: relative;
+}
+
+.hot-song-wrap{
+    position: absolute;
+    top:5vw;
+    left:5vw;
+    width: 38vw;
+    height: 20vw;
+    overflow: hidden;
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880);
+    background-position:-6vw -6vw;  
+    background-size:44vw 26vw;
+}
+
+.updata-time{
+    color: white;
+    position: absolute;
+    top:28vw;
+    left:4vw;
+    font-size: 1vw;
+    transform:scale(0.9);
+}
+
+
+
+.hot-song-list p{
+    text-align: center;
+}
+
+.hot-song-list {
+    
+}
+
+.hot-song-list  li{
+    
+    padding-bottom: 2vw;
+    position: relative;
+}
+
+.hot-song-list  li a{
+   text-decoration: none;
+   color: inherit;
+   display: flex;
+}
+
+
+.hot-song-list  li h3{
+    font-weight: normal;
+}
+
+.hot-song-list  svg.icon-play{
+   fill:gray;
+   width:9vw;
+   height: 9vw;
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   right:2vw;
+}
+
+.hot-song-list  li p{
+    font-size:4vw;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+ }
+
+
+.hot-song-list  li svg.icon-sq{
+    fill:orange;
+    width:4vw;
+    height: 4vw;
+    margin-right:2vw;
+ }
+
+ .orange-hot-song{
+    height: 39vw;
+ }
+
+ .order-number{
+    height:11vw;
+    line-height:11vw; 
+    margin-left:2vw;
+    margin-right:2vw;
+ }
+
+ .color-red{
+    color: red;
+ }
+
+ .song-name{
+    width:100%;
+    border-bottom: 0.1px solid #E2E2E3;
+ }
+
+ .look-complete{
+    text-align:center;
+    color: #999999;
+    transform: scale(0.9);
+    margin-top:3vw;
+    margin-bottom: 6vw;
+ }
+
+
+
+#container {
+	width:94vw;
+	height:30px;
+	margin:0 auto;
+}
+#container  div.search {
+	padding:10px 0;
+}
+#container form {
+	position:relative;
+	width:100%;
+	margin:0 auto;
+}
+#container  input,button {
+	border:none;
+	outline:none;
+}
+#container  input {
+	width:100%;
+	height:30px;
+	padding-left:25px;
+}
+#container .search-icon {
+	height:15px;
+	width:21px;
+    position:absolute;
+    fill: #D0C9CB;
+    top:7px;
+    left: 2px;
+}
+
+.bar7 form {
+	height:42px;
+}
+.bar7 input {
+	width:250px;
+	border-radius:42px;
+	border:2px solid #324B4E;
+	background: #ebecec;;
+    float:right;
+}
+
+.bar7 input::-webkit-input-placeholder{
+    color:#c9c9c9;
+}
+
+.search-content {
+    color:#5a7dab;
+    padding:20px 5px;
+    border-top: 1px  solid gray;
+    border-bottom: 1px solid gray;
+}
+
+
+
