@@ -11,7 +11,7 @@
 ol{list-style: none}
 ul{list-style: none}
 .topbar{
-    background:red;
+    background:#c4483c;
     padding: 4.5vw 2.5vw;
     display: flex;
     align-items: center;
@@ -112,11 +112,19 @@ ul{list-style: none}
    margin-bottom: 3vw;
 }
 
-.playlists>ul>li>img{
+.playlists>ul>li>a{
+    display: inline-block;
+    width:100%;
+    text-decoration: none;
+    color:#333;
+ }
+
+
+.playlists>ul>li>a>img{
     width:100%;
  }
 
- .playlists>ul>li>p{
+ .playlists>ul>li>a>p{
     padding: 0 1vw;
     display: -webkit-box;
     height: 8vw; /* Fallback for non-webkit */
@@ -338,6 +346,7 @@ section>h2:first-child{
 
  .song-name{
     width:100%;
+    padding-bottom: 10px;
     border-bottom: 0.1px solid #E2E2E3;
  }
 
@@ -371,7 +380,8 @@ section>h2:first-child{
 #container  input {
 	width:100%;
 	height:30px;
-	padding-left:25px;
+    padding-left:25px;
+    padding-right:15px;
 }
 #container .search-icon {
 	height:15px;
@@ -399,10 +409,15 @@ section>h2:first-child{
 
 .search-content {
     color:#5a7dab;
-    padding:20px 5px;
-    border-top: 1px  solid gray;
-    border-bottom: 1px solid gray;
+    padding:10px 5px;
+    border-top: 1px  solid #ebeece;
+    border-bottom: 1px solid #ebeece;
 }
 
 
 
+.result{
+    padding-left: 10px;
+    border-bottom:1px solid  #ebeece;
+    padding-bottom: 6px;
+}

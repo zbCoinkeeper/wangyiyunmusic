@@ -66,7 +66,7 @@ $(function () {
                     let items = response
                     items.forEach((element, index) => {
                         let $li = $(`
-                    <li>
+                    <li class=”hot-list-item“>
                     <a href="./song.html?id=${element.id}">
                         <div class="order-number">
                             0${index + 1}
@@ -122,7 +122,7 @@ $(function () {
                 if (res.length !== 0) {
                     for (var i = 0; i < res.length; i++) {
                         let li = `
-                        <li data-id="${song[i].id}">
+                        <li data-id="${song[i].id}" class="result">
                          <a href='./song.html?id=${song[i].id}'>
                             ${song[i].name} 
                          </a>
@@ -131,10 +131,10 @@ $(function () {
                         $("#output").append(li)
                     }
                 } else {
-                    $("#output").text("没有结果")
+                    //$("#output").text("没有结果")
                 }
             })
-        }, 500)
+        }, 1000)
     })
 
     function search(keyword) {
@@ -150,8 +150,16 @@ $(function () {
                 },
                 {
                     "id": 3,
-                    "name": "后来的我们",
+                    "name": "追光者",
                 },
+                {
+                    "id": 4,
+                    "name": "匿名的好友",
+                },
+                {
+                    "id": 5,
+                    "name": "那些年",
+                }
             ]
             let result = database.filter((item) => {
                 return item.name.indexOf(keyword) >= 0
